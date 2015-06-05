@@ -1,0 +1,39 @@
+//
+//  ARPrefixHeader.pch
+//  Artistic
+//
+//  Created by Antonio J. on 28/05/15.
+//  Copyright (c) 2015 Antonio J. Martinez Sanchez. All rights reserved.
+//
+
+#ifndef Artistic_ARPrefixHeader_pch
+#define Artistic_ARPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+// Frameworks
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <CoreData/CoreData.h>
+
+#if TARGET_OS_IPHONE
+#import <MobileCoreServices/MobileCoreServices.h>
+#else
+#import <CoreServices/CoreServices.h>
+#endif
+
+#import <Overcoat/Overcoat.h>
+#import <Mantle/Mantle.h>
+#import <EXTScope.h>
+
+// Commons
+#import "ARConstants.h"
+#import "UIColor+Artistic.h"
+#import "UIFont+Artistic.h"
+#import "UIImageView+Artistic.h"
+
+#endif
